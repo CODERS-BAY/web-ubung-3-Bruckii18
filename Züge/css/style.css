@@ -1,0 +1,81 @@
+body {
+    background-color: azure;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: auto;
+}
+main {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    color: rgb(104, 102, 102);
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-image: url("../img/Banner.jpg");
+    height: 8rem;
+}
+
+h2 {
+    padding-left: 2rem;
+}
+.right {
+    clear: both;
+    text-align: right;
+    padding-right: 2rem;
+}
+main img {
+    box-shadow: 10px 10px 15px gray;
+}
+
+.railjet img {
+    float: left;
+    max-width: 100%;
+    margin: 2rem;
+}
+.railjet p {
+    margin: 2rem;
+    padding-top: 4rem;
+}
+
+.regionalzug {
+    display: flex;
+    flex-direction: row-reverse;
+    /* max-height: 30rem; */
+    margin: 2rem;
+}
+.regionalzug div {
+    margin: 2rem;
+}
+.regionalzug audio {
+    border-radius: 25px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.container .video {
+    margin: 2rem;
+    max-width: 90%;
+    box-shadow: 10px 10px 15px grey;
+}
+
+@media screen and (max-width: 730px) {
+    .railjet img {
+       clear: both;
+       max-width: 85%;
+   }
+
+    .regionalzug {
+        flex-wrap: wrap;
+    }
+    .container {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+}
